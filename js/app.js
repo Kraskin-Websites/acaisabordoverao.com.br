@@ -1,7 +1,7 @@
 const CELULAR_EMPRESA = '5551997316095';
 
 const LOJA_ABRE = 19;
-const LOJA_FECHA  = 03;
+const LOJA_FECHA  = 3;
 
 // Inicializa  proximoIdCarrinho com valor salvo no navegador ou o valor 1
 let proximoIdCarrinho = 1;
@@ -776,11 +776,11 @@ cardapio.metodos = {
 
             if (validaCep.test(cep)) {
 
-                $.getJSON("https://buscacepinter.correios.com.br/app/endereco/index.php" + cep + "/json/?callback=?", function (dados) {
+                $.getJSON("https://viacep.com.br/ws/" + cep + "/json/?callback=?", function (dados) {
 
                     if (!("erro" in dados)) {
 
-                        if (dados.uf == 'Rs') {
+                        if (dados.uf == 'RS') {
                             // atualizar os campos com os valores retornados
                             $('#txtEndereco').val(dados.logradouro);
                             $('#txtBairro').val(dados.bairro);
