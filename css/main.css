@@ -9,7 +9,7 @@
 }
 
 :root {
-    --color-background: #5cf3d2;
+    --color-background: #a94ae0b7;
     --color-black:#212121;
     --color-black-heavy:#000000;
     --color-text: #4f4f4f;
@@ -20,7 +20,7 @@
     --color-white: #ffffff;
     --color-red: #e74e3c;
     --color-green:#2ecc71;
-    --color-separate:#cccccc;
+    --color-separate:#fbf9fca8;
 }
 
 html, body {
@@ -286,10 +286,12 @@ a.navbar-brand {
 }
 
 .card-item {
+    background-color: #d400b8c2;
     height: 360px;
 }
 
 .card-item .img-produto img {
+   
     width: 100%;
     border-radius: 11px;
 }
@@ -305,7 +307,7 @@ a.navbar-brand {
 }
 
 .card-item .price-produto{
-    color: var(--color-primary);
+    color: rgb(14, 255, 14);
     font-size: 20px;
 }
 
@@ -701,6 +703,10 @@ footer {
     
 }
 
+
+.logo-footer{
+    border-radius: 50%;
+}
 
 /*
 .checkbox-custom + .checkbox-custom-label:before {
