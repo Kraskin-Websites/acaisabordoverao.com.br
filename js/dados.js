@@ -2,7 +2,7 @@ var MENU = {
     "acai-creme": [
         {
             "id": "creme-300",
-            "img": "./img/cardapio/creme/300ml.png",
+            "img": "./img/cardapio/creme/copo330.jpg",
             "name": "Copo Açai 330ML",
             "dsc": "Creme de Açaí 300ML",
             "price": 20.00
