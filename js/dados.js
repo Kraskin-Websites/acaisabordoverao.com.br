@@ -149,7 +149,7 @@ var ACRESCIMOS = {
         {
             "id": "kit-kat",
             "name": "Recheio Nutella",
-            "price": 3.50
+            "price": 9.00
         },
         {
             "id": "creme-ninho",
