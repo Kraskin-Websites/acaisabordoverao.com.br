@@ -9,7 +9,7 @@ var MENU = {
         },
         {
             "id": "creme-500",
-            "img": "./img/cardapio/creme/500ml.png",
+            "img": "./img/cardapio/creme/copo500.jpg",
             "name": "Copo Açai  550ML",
             "dsc": "Creme de Acaí 500ML",
             "price": 30.00
@@ -17,7 +17,7 @@ var MENU = {
 
         {
             "id": "creme-700",
-            "img": "./img/cardapio/creme/700ml.png",
+            "img": "./img/cardapio/creme/combo.jpg",
             "name": "Combo Duplo 330ML",
             "dsc": "Dois copos de Açai 330ml",
             "price": 36.00
@@ -89,7 +89,7 @@ var ACRESCIMOS = {
     "acrescimos-comum": [
         {
             "id": "leite-em-po",
-            "name": "Leite em Pó",
+            "name": "Leite em Pó Ninho",
             "price": 2.00
         },
         {
@@ -100,7 +100,7 @@ var ACRESCIMOS = {
         {
             "id": "morango",
             "name": "Morango",
-            "price": 2.00
+            "price": 3.50
         },
         {
             "id": "pacoca",
@@ -138,17 +138,17 @@ var ACRESCIMOS = {
         {
             "id": "bis",
             "name": "Bis",
-            "price": 3.00
+            "price": 1.00
         },
 
         {
             "id": "nutella",
-            "name": "Nutella",
-            "price": 4.00
+            "name": "Cobertura de Nutella",
+            "price": 4.50
         },
         {
             "id": "kit-kat",
-            "name": "Kit Kat",
+            "name": "Recheio Nutella",
             "price": 3.50
         },
         {
@@ -183,8 +183,8 @@ var ACRESCIMOS = {
         },
         {
             "id": "chocoball",
-            "name": "Chocoball",
-            "price": 9.00
+            "name": "Leite em Pó ninho",
+            "price": 4.00
         }
     ]
 }
