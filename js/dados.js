@@ -109,7 +109,7 @@ var ACRESCIMOS = {
         },
         {
             "id": "kiwi",
-            "name": "Kiwi",
+            "name": "Pessego em calda",
             "price": 2.00
         },
         {
@@ -169,12 +169,12 @@ var ACRESCIMOS = {
         {
             "id": "granulado",
             "name": "Recheio de creme Prestigio",
-            "price": 2.00
+            "price": 8.00
         },
         {
             "id": "mEm",
             "name": "M&M's",
-            "price": 3.00
+            "price": 4.00
         },
         {
             "id": "ovomaltine",
