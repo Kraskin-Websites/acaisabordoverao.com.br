@@ -27,9 +27,9 @@ var MENU = {
         {
             "id": "creme-1l",
             "img": "./img/cardapio/creme/1L.png",
-            "name": "Creme 1L",
+            "name":"Açaí 1L",
             "dsc": "Açaí 1L",
-            "price": 30.00
+            "price": 55.00
         }
 
     ],
