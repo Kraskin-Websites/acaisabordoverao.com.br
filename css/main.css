@@ -12,7 +12,7 @@
     --color-background: #a94ae0b7;
     --color-black:#212121;
     --color-black-heavy:#000000;
-    --color-text: #4f4f4f;
+    --color-text: #25f158;
     --color-text-out: #90908e;
     --color-primary: #513F8B;
     --color-primary-light:#a89fc5;
@@ -58,7 +58,7 @@ a.navbar-brand {
 }
 
 .btn-icon {
-    padding-right: 75px;
+    padding-right: 5px;
 
 }
 
@@ -214,14 +214,14 @@ a.navbar-brand {
 }
 
 .hint-title {
-    color:#513F8B;
+    color:#0a0a0a;
     font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 5px;
 }
 
 .title {
-    color: var(--color-black);
+    color: var(--color-black-heavy);
     font-size:40px;
     margin-top: 5px;
     margin-bottom: 30px;
@@ -297,7 +297,7 @@ a.navbar-brand {
 }
 
 .card-item .title-produto {
-    color: var(--color-black);
+    color: var(--color-black-heavy);
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
@@ -525,7 +525,7 @@ footer {
 }
 
 .modal-full .title-produto {
-    color: var(--color-black);
+    color: var(--color-black-heavy);
     font-size: 20px;
     text-overflow: ellipsis;
     white-space: nowrap;
