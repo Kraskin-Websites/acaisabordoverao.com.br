@@ -12,7 +12,7 @@ var MENU = {
             "img": "./img/cardapio/creme/500ml.png",
             "name": "Copo Açai  550ML",
             "dsc": "Creme de Acaí 500ML",
-            "price": 15.00
+            "price": 30.00
         },
 
         {
@@ -28,7 +28,7 @@ var MENU = {
             "id": "creme-1l",
             "img": "./img/cardapio/creme/1L.png",
             "name": "Creme 1L",
-            "dsc": "Creme de Açaí 1L",
+            "dsc": "Açaí 1L",
             "price": 30.00
         }
 
