@@ -153,22 +153,22 @@ var ACRESCIMOS = {
         },
         {
             "id": "creme-ninho",
-            "name": "Creme de Ninho",
-            "price": 4.00
+            "name": "Cobertura creme Galak",
+            "price": 4.50
         },
         {
             "id": "mouse-maracuja",
-            "name": "Mouse de Maracujá",
-            "price": 4.00
+            "name": "Recheio creme Galak",
+            "price": 8.00
         },
         {
             "id": "gotas-chocolate",
-            "name": "Gotas de Chocolate",
-            "price": 2.50
+            "name": "Cobertura de creme Prestigio",
+            "price": 4.50
         },
         {
             "id": "granulado",
-            "name": "Granulado",
+            "name": "Recheio de creme Prestigio",
             "price": 2.00
         },
         {
@@ -179,12 +179,12 @@ var ACRESCIMOS = {
         {
             "id": "ovomaltine",
             "name": "Ovomaltine",
-            "price": 2.50
+            "price": 5.00
         },
         {
             "id": "chocoball",
             "name": "Chocoball",
-            "price": 2.50
+            "price": 9.00
         }
     ]
 }
