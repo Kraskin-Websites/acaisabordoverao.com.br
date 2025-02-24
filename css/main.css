@@ -639,7 +639,7 @@ footer {
 
 .modal-full .acrescimo label {
     position: relative;
-    color: var(--color-black-heavy);
+    color: var(--color-green);
     font-family: 'PoppinsRegular', sans-serif;
     font-size: 18px;
     border: 3px solid var(--color-primary);
