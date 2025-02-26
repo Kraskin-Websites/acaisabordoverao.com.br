@@ -181,8 +181,8 @@ a.navbar-brand {
 }
 
 .card-banner {
-    height: 360px;
-    width: 360px;
+    height: 460px;
+    width: 460px;
     border-radius: 140px;
     background-color: #513F8B;
     position:absolute;
@@ -292,7 +292,7 @@ a.navbar-brand {
 
 .card-item .img-produto img {
    
-    width: 100%;
+    width: 80%;
     border-radius: 11px;
 }
 
