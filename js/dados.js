@@ -27,7 +27,7 @@ var MENU = {
         {
             "id": "creme-1l",
             "img": "./img/cardapio/creme/combo.jpg",
-            "name":"Combo duplo 500ml",
+            "name":"Combo Duplo 500ml",
             "dsc": "Dois copos de 500ml",
             "price": 55.00
         }
