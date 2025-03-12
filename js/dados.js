@@ -18,9 +18,9 @@ var MENU = {
         {
             "id": "creme-700",
             "img": "./img/cardapio/creme/combo.jpg",
-            "name": "Combo Duplo 330ML",
+            "name": "Combo Duplo R$36,00",
             "dsc": "Dois copos de Açai 330ml",
-            "price": 36.00
+            "price": 18.00
         },
         
         
@@ -29,7 +29,7 @@ var MENU = {
             "img": "./img/cardapio/creme/combo.jpg",
             "name":"Combo Duplo 500ml",
             "dsc": "Dois copos de 500ml",
-            "price": 55.00
+            "price": 65.00
         }
 
     ],
