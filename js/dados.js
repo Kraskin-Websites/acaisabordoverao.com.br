@@ -89,7 +89,7 @@ var ACRESCIMOS = {
     "acrescimos-comum": [
         {
             "id": "leite-em-po",
-            "name": "Leite em Pó Ninho",
+            "name": "Leite em Pó ",
             "price": 2.00
         },
         {
