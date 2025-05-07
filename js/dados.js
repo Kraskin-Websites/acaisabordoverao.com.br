@@ -100,7 +100,7 @@ var ACRESCIMOS = {
         {
             "id": "morango",
             "name": "Morango",
-            "price": 3.50
+            "price": 5.50
         },
         {
             "id": "pacoca",
@@ -149,16 +149,16 @@ var ACRESCIMOS = {
         {
             "id": "kit-kat",
             "name": "Recheio Nutella",
-            "price": 9.00
+            "price": 11.00
         },
         {
             "id": "creme-ninho",
-            "name": "Cobertura creme Galak",
+            "name": "Cobertpricde leitinho",
             "price": 4.50
         },
         {
             "id": "mouse-maracuja",
-            "name": "Recheio creme Galak",
+            "name": "Recheio de leitinho",
             "price": 8.00
         },
         {
