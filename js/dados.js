@@ -153,12 +153,12 @@ var ACRESCIMOS = {
         },
         {
             "id": "creme-ninho",
-            "name": "Cobertpricde leitinho",
+            "name": "Cobertura creme leitinho",
             "price": 4.50
         },
         {
             "id": "mouse-maracuja",
-            "name": "Recheio de leitinho",
+            "name": "Recheio de creme leitinho",
             "price": 8.00
         },
         {
