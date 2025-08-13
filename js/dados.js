@@ -27,9 +27,9 @@ var MENU = {
         {
             "id": "creme-1l",
             "img": "./img/cardapio/creme/combo.jpg",
-            "name":"Combo Duplo 500ml",
+            "name":"Combo Duplo 500ml R$32.50",
             "dsc": "Dois copos de 500ml",
-            "price": 65.00
+            "price": 32.50
         }
 
     ],
@@ -138,13 +138,13 @@ var ACRESCIMOS = {
         {
             "id": "bis",
             "name": "Bis",
-            "price": 1.00
+            "price": 1.50
         },
 
         {
             "id": "nutella",
             "name": "Cobertura de Nutella",
-            "price": 4.50
+            "price": 5.50
         },
         {
             "id": "kit-kat",
@@ -168,24 +168,49 @@ var ACRESCIMOS = {
         },
         {
             "id": "granulado",
-            "name": "Recheio de creme Prestigio",
-            "price": 8.00
+            "name": "Cobertura fini beijos",
+            "price": 9.00
         },
+
+             {
+            "id": "granulado",
+            "name": "Cobertura fini dentaduras",
+            "price": 9.00
+        },
+
+             {
+            "id": "granulado",
+            "name": "Cobertura fini banana",
+            "price": 9.00
+        },
+
         {
             "id": "mEm",
             "name": "M&M's",
-            "price": 4.00
+            "price": 5.00
         },
+
         {
             "id": "ovomaltine",
             "name": "Ovomaltine",
             "price": 5.00
         },
+
+                {
+            "id": "granulado",
+            "name": "Cobertura creme ovomaltine",
+            "price": 9.00
+        },
+
+
+        
         {
             "id": "chocoball",
             "name": "Leite em Pó ninho",
             "price": 4.00
         }
+
+        
     ]
 }
 
