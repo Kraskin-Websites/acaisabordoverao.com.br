@@ -27,7 +27,7 @@ var MENU = {
         {
             "id": "creme-1l",
             "img": "./img/cardapio/creme/combo.jpg",
-            "name":"Combo Duplo 500ml R$32.50",
+            "name":"Combo Duplo 500ml R$65.00",
             "dsc": "Dois copos de 500ml",
             "price": 32.50
         }
@@ -362,3 +362,4 @@ function carregarDadosNovamente() {
     cardapio.metodos.atualizarBadgeTotal();
     //console.log('O console foi aberto..');
 }
+
