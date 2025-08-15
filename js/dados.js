@@ -12,7 +12,7 @@ var MENU = {
             "img": "./img/cardapio/creme/copo500.jpg",
             "name": "Copo Açai  550ML",
             "dsc": "Copo Açaí 500ML",
-            "price": 30.00
+            "price": 32.50
         },
 
         {
@@ -27,9 +27,9 @@ var MENU = {
         {
             "id": "creme-1l",
             "img": "./img/cardapio/creme/combo.jpg",
-            "name":"Combo Duplo 500ml R$65.00",
+            "name":"Combo Duplo 500ml R$63.00",
             "dsc": "Dois copos de 500ml",
-            "price": 32.50
+            "price": 31.50
         }
 
     ],
@@ -362,4 +362,5 @@ function carregarDadosNovamente() {
     cardapio.metodos.atualizarBadgeTotal();
     //console.log('O console foi aberto..');
 }
+
 
