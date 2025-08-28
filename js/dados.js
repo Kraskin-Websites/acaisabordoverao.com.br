@@ -20,7 +20,7 @@ var MENU = {
             "img": "./img/cardapio/creme/combo.jpg",
             "name": "Combo Duplo 330ml R$36,00",
             "dsc": "Dois copos de Açai 330ml",
-            "price": 18.00
+            "price": 36.00
         },
         
         
@@ -29,7 +29,7 @@ var MENU = {
             "img": "./img/cardapio/creme/combo.jpg",
             "name":"Combo Duplo 500ml R$63.00",
             "dsc": "Dois copos de 500ml",
-            "price": 31.50
+            "price": 63.00
         }
 
     ],
@@ -362,6 +362,7 @@ function carregarDadosNovamente() {
     cardapio.metodos.atualizarBadgeTotal();
     //console.log('O console foi aberto..');
 }
+
 
 
 
