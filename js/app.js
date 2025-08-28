@@ -541,8 +541,8 @@ cardapio.metodos = {
     calcularValorAcrescimoComum1L: (acrescimos) => {
         let totalAcrescimoComum = 0;
         // Verifica se há mais de 6 acrescimosComuns
-        if (acrescimos.length > 6) {
-            $.each(acrescimos.slice(6), (i, e) => {
+        if (acrescimos.length > 3) {
+            $.each(acrescimos.slice(3), (i, e) => {
                 // Calcula o valor dos acrescimosComuns além dos primeiros 3
                 totalAcrescimoComum += parseFloat(e.price);
             });
@@ -1383,6 +1383,7 @@ cardapio.templates = {
     <div class="acrescimo">
         <b>*</b>\${nome}, 
     </div>`
+
 
 
 }
