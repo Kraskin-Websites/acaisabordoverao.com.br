@@ -12,13 +12,13 @@ var MENU = {
             "img": "./img/cardapio/creme/copo500.jpg",
             "name": "Copo Açai  550ML",
             "dsc": "Copo Açaí 500ML",
-            "price": 32.50
+            "price": 30.00
         },
 
         {
             "id": "creme-700",
             "img": "./img/cardapio/creme/combo.jpg",
-            "name": "Combo Duplo 330ml min. 2und",
+            "name": "Combo Duplo 300ml min 2 und",
             "dsc": "Dois copos de Açai 330ml",
             "price": 18.00
         },
@@ -27,9 +27,9 @@ var MENU = {
         {
             "id": "creme-1l",
             "img": "./img/cardapio/creme/combo.jpg",
-            "name":"Combo Duplo 500ml min.2und R$63.00",
+            "name":"Combo Duplo 500ml min 2und ",
             "dsc": "Dois copos de 500ml",
-            "price": 31.50.00
+            "price": 63.00
         }
 
     ],
@@ -89,7 +89,7 @@ var ACRESCIMOS = {
     "acrescimos-comum": [
         {
             "id": "leite-em-po",
-            "name": "Leite em Pó ",
+            "name": "Leite em Pó Ninho",
             "price": 2.00
         },
         {
@@ -100,7 +100,7 @@ var ACRESCIMOS = {
         {
             "id": "morango",
             "name": "Morango",
-            "price": 5.50
+            "price": 3.50
         },
         {
             "id": "pacoca",
@@ -138,27 +138,27 @@ var ACRESCIMOS = {
         {
             "id": "bis",
             "name": "Bis",
-            "price": 1.50
+            "price": 1.00
         },
 
         {
             "id": "nutella",
             "name": "Cobertura de Nutella",
-            "price": 5.50
+            "price": 4.50
         },
         {
             "id": "kit-kat",
             "name": "Recheio Nutella",
-            "price": 11.00
+            "price": 9.00
         },
         {
             "id": "creme-ninho",
-            "name": "Cobertura creme leitinho",
+            "name": "Cobertura creme Galak",
             "price": 4.50
         },
         {
             "id": "mouse-maracuja",
-            "name": "Recheio de creme leitinho",
+            "name": "Recheio creme Galak",
             "price": 8.00
         },
         {
@@ -168,49 +168,24 @@ var ACRESCIMOS = {
         },
         {
             "id": "granulado",
-            "name": "Cobertura fini beijos",
-            "price": 9.00
+            "name": "Recheio de creme Prestigio",
+            "price": 8.00
         },
-
-             {
-            "id": "granulado",
-            "name": "Cobertura fini dentaduras",
-            "price": 9.00
-        },
-
-             {
-            "id": "granulado",
-            "name": "Cobertura fini banana",
-            "price": 9.00
-        },
-
         {
             "id": "mEm",
             "name": "M&M's",
-            "price": 5.00
+            "price": 4.00
         },
-
         {
             "id": "ovomaltine",
             "name": "Ovomaltine",
             "price": 5.00
         },
-
-                {
-            "id": "granulado",
-            "name": "Cobertura creme ovomaltine",
-            "price": 9.00
-        },
-
-
-        
         {
             "id": "chocoball",
             "name": "Leite em Pó ninho",
             "price": 4.00
         }
-
-        
     ]
 }
 
@@ -362,9 +337,3 @@ function carregarDadosNovamente() {
     cardapio.metodos.atualizarBadgeTotal();
     //console.log('O console foi aberto..');
 }
-
-
-
-
-
-
