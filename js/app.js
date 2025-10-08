@@ -1,7 +1,7 @@
 const CELULAR_EMPRESA = '5551997316095';
 
-const LOJA_ABRE = 19;
-const LOJA_FECHA  = 3;
+const LOJA_ABRE = 16;
+const LOJA_FECHA  = 1;
 
 // Inicializa  proximoIdCarrinho com valor salvo no navegador ou o valor 1
 let proximoIdCarrinho = 1;
@@ -1383,6 +1383,7 @@ cardapio.templates = {
     <div class="acrescimo">
         <b>*</b>\${nome}, 
     </div>`
+
 
 
 }
