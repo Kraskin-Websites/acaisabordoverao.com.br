@@ -200,7 +200,7 @@ a.navbar-brand {
 .card{
     border-radius: 20px;
     padding: 15px 20px;
-    font-size: 20px;
+    font-size: 15px;
     box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1)!important;
     border: none!important;
 }
@@ -301,7 +301,7 @@ a.navbar-brand {
     overflow: hidden;
     height: 40px;
     margin-bottom: 0px;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .card-item .price-produto{
@@ -2863,3 +2863,4 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
 .logo-footer {
     border-radius: 50%;
 }
+
