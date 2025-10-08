@@ -1,7 +1,7 @@
 const CELULAR_EMPRESA = '5551997316095';
 
-const LOJA_ABRE = 19;
-const LOJA_FECHA  = 3;
+const LOJA_ABRE = 15:30;
+const LOJA_FECHA  = 1:30;
 
 // Inicializa  proximoIdCarrinho com valor salvo no navegador ou o valor 1
 let proximoIdCarrinho = 1;
@@ -1387,3 +1387,4 @@ cardapio.templates = {
 
 
 }
+
