@@ -12,7 +12,7 @@ var MENU = {
             "img": "./img/cardapio/creme/copo500.jpg",
             "name": "Copo Açai  550ML",
             "dsc": "Copo Açaí 500ML",
-            "price": 30.00
+            "price": 32.50
         },
 
         {
@@ -337,3 +337,4 @@ function carregarDadosNovamente() {
     cardapio.metodos.atualizarBadgeTotal();
     //console.log('O console foi aberto..');
 }
+
