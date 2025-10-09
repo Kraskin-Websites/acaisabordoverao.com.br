@@ -29,7 +29,7 @@ var MENU = {
             "img": "./img/cardapio/creme/combo.jpg",
             "name":"Combo Duplo 500ml min 2und ",
             "dsc": "Dois copos de 500ml",
-            "price": 63.00
+            "price": 31.50
         }
 
     ],
@@ -337,4 +337,5 @@ function carregarDadosNovamente() {
     cardapio.metodos.atualizarBadgeTotal();
     //console.log('O console foi aberto..');
 }
+
 
