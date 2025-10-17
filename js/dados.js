@@ -9,7 +9,7 @@ var MENU = {
         },
         {
             "id": "creme-500",
-            "img": "./img/cardapio/creme/copo500.jpg",
+            "img": "./img/cardapio/creme/copo330.jpg",
             "name": "Copo Açai  550ML",
             "dsc": "Copo Açaí 500ML",
             "price": 32.50
@@ -17,8 +17,8 @@ var MENU = {
 
         {
             "id": "creme-700",
-            "img": "./img/cardapio/creme/combo.jpg",
-            "name": "Copo Açaí Origem 300ml dois copos",
+            "img": "./img/cardapio/creme/copo330.jpg",
+            "name": "Copo Açaí Origem 300ml",
             "dsc": " Copo de Açai origem 330ml",
             "price": 20.00
         },
@@ -26,7 +26,7 @@ var MENU = {
         
         {
             "id": "creme-1l",
-            "img": "./img/cardapio/creme/combo.jpg",
+            "img": "./img/cardapio/creme/copo330.jpg",
             "name":"Copo Açaí Origem 500ml  ",
             "dsc": "Copo de Açaí Origem 500ml",
             "price": 28.00
@@ -36,7 +36,7 @@ var MENU = {
     "acai-vitamina": [
         {
             "id": "vitamina-300",
-            "img": "./img/cardapio/vitamina/vitamina.png",
+            "img": "./img/cardapio/creme/copo330.jpg",
             "name": "Vitamina 300ML",
             "dsc": "Vitamina de Açai 300ML",
             "price": 8.00
@@ -337,6 +337,7 @@ function carregarDadosNovamente() {
     cardapio.metodos.atualizarBadgeTotal();
     //console.log('O console foi aberto..');
 }
+
 
 
 
