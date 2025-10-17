@@ -18,18 +18,18 @@ var MENU = {
         {
             "id": "creme-700",
             "img": "./img/cardapio/creme/combo.jpg",
-            "name": "Combo Duplo 300ml dois copos",
-            "dsc": "Dois copos de Açai 330ml",
-            "price": 36.00
+            "name": "Copo Açaí Origem 300ml dois copos",
+            "dsc": " Copo de Açai origem 330ml",
+            "price": 20.00
         },
         
         
         {
             "id": "creme-1l",
             "img": "./img/cardapio/creme/combo.jpg",
-            "name":"Combo Duplo 500ml dois copos  ",
-            "dsc": "Dois copos de 500ml",
-            "price": 63.00
+            "name":"Copo Açaí Origem 500ml  ",
+            "dsc": "Copo de Açaí Origem 500ml",
+            "price": 28.00
         }
 
     ],
@@ -337,6 +337,7 @@ function carregarDadosNovamente() {
     cardapio.metodos.atualizarBadgeTotal();
     //console.log('O console foi aberto..');
 }
+
 
 
 
