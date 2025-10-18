@@ -89,7 +89,7 @@ var ACRESCIMOS = {
     "acrescimos-comum": [
         {
             "id": "leite-em-po",
-            "name": "Leite em Pó Ninho",
+            "name": "Leite em Pó",
             "price": 2.00
         },
         {
@@ -137,38 +137,38 @@ var ACRESCIMOS = {
     "acrescimos-especiais": [
         {
             "id": "bis",
-            "name": "Bis",
-            "price": 1.00
+            "name": "Bis 4 und",
+            "price": 2.00
         },
 
         {
             "id": "nutella",
             "name": "Cobertura de Nutella",
-            "price": 4.50
+            "price": 7.00
         },
         {
             "id": "kit-kat",
             "name": "Recheio Nutella",
-            "price": 9.00
+            "price": 11.00
         },
         {
             "id": "creme-ninho",
-            "name": "Cobertura creme Galak",
+            "name": "Cobertura creme leitinho",
             "price": 4.50
         },
         {
             "id": "mouse-maracuja",
-            "name": "Recheio creme Galak",
+            "name": "Recheio creme leitinho",
             "price": 8.00
         },
         {
             "id": "gotas-chocolate",
-            "name": "Cobertura de creme Prestigio",
+            "name": "Cobertura de creme Avelã",
             "price": 4.50
         },
         {
             "id": "granulado",
-            "name": "Recheio de creme Prestigio",
+            "name": "Recheio de creme Avelã",
             "price": 8.00
         },
         {
@@ -183,8 +183,8 @@ var ACRESCIMOS = {
         },
         {
             "id": "chocoball",
-            "name": "Leite em Pó ninho",
-            "price": 4.00
+            "name": "Chocoball",
+            "price": 2.00
         }
     ]
 }
@@ -337,6 +337,7 @@ function carregarDadosNovamente() {
     cardapio.metodos.atualizarBadgeTotal();
     //console.log('O console foi aberto..');
 }
+
 
 
 
