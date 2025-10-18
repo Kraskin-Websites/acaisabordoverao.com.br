@@ -3,14 +3,14 @@ var MENU = {
         {
             "id": "creme-300",
             "img": "./img/cardapio/creme/copo330.jpg",
-            "name": "Copo Açai 330ML",
+            "name": "Copo Açai Polpa Norte 330ML",
             "dsc": "Creme de Açaí 300ML",
             "price": 25.00
         },
         {
             "id": "creme-500",
             "img": "./img/cardapio/creme/copo330.jpg",
-            "name": "Copo Açai  550ML",
+            "name": "Copo Açaí Polpa Norte 550ML",
             "dsc": "Copo Açaí 500ML",
             "price": 32.50
         },
@@ -337,6 +337,7 @@ function carregarDadosNovamente() {
     cardapio.metodos.atualizarBadgeTotal();
     //console.log('O console foi aberto..');
 }
+
 
 
 
