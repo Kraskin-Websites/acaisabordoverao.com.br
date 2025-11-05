@@ -650,8 +650,8 @@ footer {
 
 .modal-full .acrescimo label:before {
     content: "";
-    height: 30px;
-    width: 30px;
+    height: 31px;
+    width: 31px;
     border: 3px solid var(--color-primary);
     border-radius: 20%;
     margin-right: 20px;
@@ -2863,4 +2863,5 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
 .logo-footer {
     border-radius: 50%;
 }
+
 
