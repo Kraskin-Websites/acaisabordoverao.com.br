@@ -138,7 +138,7 @@ var ACRESCIMOS = {
         {
             "id": "bis",
             "name": "Bis 4 und",
-            "price": 2.00
+            "price": 2.50
         },
 
         {
@@ -180,6 +180,17 @@ var ACRESCIMOS = {
             "id": "ovomaltine",
             "name": "Ovomaltine",
             "price": 5.00
+        },
+         {
+            "id": "ovomaltine",
+            "name": "Cobertura Kinder Bueno",
+            "price": 5.00
+        },
+
+         {
+            "id": "ovomaltine",
+            "name": "Recheio Kinder Bueno",
+            "price": 10.00
         },
         {
             "id": "chocoball",
@@ -337,6 +348,7 @@ function carregarDadosNovamente() {
     cardapio.metodos.atualizarBadgeTotal();
     //console.log('O console foi aberto..');
 }
+
 
 
 
