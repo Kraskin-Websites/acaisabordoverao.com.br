@@ -176,22 +176,8 @@ var ACRESCIMOS = {
             "name": "M&M's",
             "price": 4.00
         },
-        {
-            "id": "ovomaltine",
-            "name": "Ovomaltine",
-            "price": 5.00
-        },
-         {
-            "id": "ovomaltine",
-            "name": "Cobertura Kinder Bueno",
-            "price": 5.00
-        },
-
-         {
-            "id": "ovomaltine",
-            "name": "Recheio Kinder Bueno",
-            "price": 10.00
-        },
+    
+    
         {
             "id": "chocoball",
             "name": "Chocoball",
