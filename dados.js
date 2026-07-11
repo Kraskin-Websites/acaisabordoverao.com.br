@@ -97,11 +97,7 @@ var ACRESCIMOS = {
             "name": "Leite Condensado",
             "price": 2.00
         },     
-        {
-            "id": "morango",
-            "name": "Morango",
-            "price": 5.50
-        },
+     
         {
             "id": "pacoca",
             "name": "Paçoca",
@@ -139,6 +135,12 @@ var ACRESCIMOS = {
             "id": "bis",
             "name": "Bis",
             "price": 1.50
+        },
+
+         {
+            "id": "morango",
+            "name": "Morango",
+            "price": 4.50
         },
 
         {
