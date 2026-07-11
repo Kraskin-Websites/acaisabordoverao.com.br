@@ -3,40 +3,40 @@ var MENU = {
         {
             "id": "creme-300",
             "img": "./img/cardapio/creme/copo330.jpg",
-            "name": "Copo Açai 330ML",
+            "name": "Copo Açai Polpa Norte 330ML",
             "dsc": "Creme de Açaí 300ML",
             "price": 25.00
         },
         {
             "id": "creme-500",
-            "img": "./img/cardapio/creme/copo500.jpg",
-            "name": "Copo Açai  550ML",
+            "img": "./img/cardapio/creme/copo330.jpg",
+            "name": "Copo Açaí Polpa Norte 550ML",
             "dsc": "Copo Açaí 500ML",
-            "price": 30.00
+            "price": 32.50
         },
 
         {
             "id": "creme-700",
-            "img": "./img/cardapio/creme/combo.jpg",
-            "name": "Combo Duplo min.2und",
-            "dsc": "Dois copos de Açai 330ml",
-            "price": 18.00
+            "img": "./img/cardapio/creme/copo330.jpg",
+            "name": "Copo Açaí Origem 300ml",
+            "dsc": " Copo de Açai origem 330ml",
+            "price": 20.00
         },
         
         
         {
             "id": "creme-1l",
-            "img": "./img/cardapio/creme/combo.jpg",
-            "name":"Combo Duplo 500ml min.2und",
-            "dsc": "Dois copos de 500ml",
-            "price": 31.50
+            "img": "./img/cardapio/creme/copo330.jpg",
+            "name":"Copo Açaí Origem 500ml  ",
+            "dsc": "Copo de Açaí Origem 500ml",
+            "price": 28.00
         }
 
     ],
     "acai-vitamina": [
         {
             "id": "vitamina-300",
-            "img": "./img/cardapio/vitamina/vitamina.png",
+            "img": "./img/cardapio/creme/copo330.jpg",
             "name": "Vitamina 300ML",
             "dsc": "Vitamina de Açai 300ML",
             "price": 8.00
@@ -89,7 +89,7 @@ var ACRESCIMOS = {
     "acrescimos-comum": [
         {
             "id": "leite-em-po",
-            "name": "Leite em Pó ",
+            "name": "Leite em Pó",
             "price": 2.00
         },
         {
@@ -97,7 +97,7 @@ var ACRESCIMOS = {
             "name": "Leite Condensado",
             "price": 2.00
         },     
-     
+      
         {
             "id": "pacoca",
             "name": "Paçoca",
@@ -131,22 +131,21 @@ var ACRESCIMOS = {
         
     ],
     "acrescimos-especiais": [
-        {
-            "id": "bis",
-            "name": "Bis",
-            "price": 1.50
-        },
-
          {
             "id": "morango",
             "name": "Morango",
-            "price": 4.50
+            "price": 3.50
+        },
+        {
+            "id": "bis",
+            "name": "Bis 4 und",
+            "price": 2.50
         },
 
         {
             "id": "nutella",
             "name": "Cobertura de Nutella",
-            "price": 5.50
+            "price": 7.00
         },
         {
             "id": "kit-kat",
@@ -160,66 +159,38 @@ var ACRESCIMOS = {
         },
         {
             "id": "mouse-maracuja",
-            "name": "Recheio de creme leitinho",
+            "name": "Recheio creme leitinho",
             "price": 8.00
         },
         {
             "id": "gotas-chocolate",
-            "name": "Cobertura de creme Prestigio",
+            "name": "Cobertura de creme Avelã",
             "price": 4.50
         },
         {
             "id": "granulado",
-            "name": "Cobertura fini beijos",
-            "price": 9.00
+            "name": "Recheio de creme Avelã",
+            "price": 8.00
         },
-
-             {
-            "id": "granulado",
-            "name": "Cobertura fini dentaduras",
-            "price": 9.00
-        },
-
-             {
-            "id": "granulado",
-            "name": "Cobertura fini banana",
-            "price": 9.00
-        },
-
         {
             "id": "mEm",
             "name": "M&M's",
-            "price": 5.00
+            "price": 4.00
         },
-
-        {
-            "id": "ovomaltine",
-            "name": "Ovomaltine",
-            "price": 5.00
-        },
-
-                {
-            "id": "granulado",
-            "name": "Cobertura creme ovomaltine",
-            "price": 9.00
-        },
-
-
-        
+    
+    
         {
             "id": "chocoball",
-            "name": "Leite em Pó ninho",
-            "price": 4.00
+            "name": "Chocoball",
+            "price": 2.00
         }
-
-        
     ]
 }
 
 var MILK_SHAKE = {
     "sorvetes": [
         {
-            "id": "chocolate",
+            "id": "Combo Duplo ",
             "name": "Chocolate",
             "desc": "sorvete"
         },
@@ -364,3 +335,11 @@ function carregarDadosNovamente() {
     cardapio.metodos.atualizarBadgeTotal();
     //console.log('O console foi aberto..');
 }
+
+
+
+
+
+
+
+
