@@ -481,6 +481,32 @@ html { scroll-behavior: smooth; }
         .menu-flip-card__media { flex-basis: 64px; width: 64px; height: 64px; }
         .menu-flip-card__media img { width: 64px; height: 64px; }
       }
+
+      /* MENU HAMBÚRGUER MOBILE */
+      .menu-toggle {
+        display: none;
+        flex: 0 0 auto;
+        width: 44px;
+        height: 44px;
+        border: 1px solid rgba(255,255,255,.45);
+        border-radius: 8px;
+        background: var(--primary-color);
+        color: #fff;
+        font-size: 26px;
+        line-height: 1;
+        cursor: pointer;
+        position: relative;
+        z-index: 1002;
+      }
+      .mobile-nav { display: none; background: var(--primary-color); }
+      .mobile-nav.is-open { display: block; }
+      .mobile-nav a { display: block; color: #fff; text-decoration: none; padding: 13px 20px; border-top: 1px solid rgba(255,255,255,.18); font-weight: 700; font-size: 13px; text-transform: uppercase; }
+      .mobile-nav a:hover, .mobile-nav a:focus { background: rgba(0,0,0,.16); }
+      @media (max-width: 768px) {
+        .menu-toggle { display: inline-flex; align-items: center; justify-content: center; }
+        .desktop-nav { display: none !important; }
+        .navbar-container { min-height: 58px; }
+      }
     </style>
   </head>
   <body>
@@ -500,6 +526,12 @@ html { scroll-behavior: smooth; }
               <li><a href="javascript:void(0)" onclick="goToStep(2)">Carrinho <span id="cartBadge" class="cart-count-badge" style="display:none">0</span></a></li>
             </ul>
           </div>
+          <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menu" aria-expanded="false" onclick="toggleMobileMenu()">☰</button>
+        </div>
+        <div class="mobile-nav" id="mobileNav">
+          <a href="#nosso-menu" onclick="closeMobileMenu()">Nossos Combos</a>
+          <a href="javascript:void(0)" onclick="closeMobileMenu(); openMonteSeuAcai()">Monte Seu Açaí</a>
+          <a href="javascript:void(0)" onclick="closeMobileMenu(); goToStep(2)">Carrinho <span id="mobileCartBadge" class="cart-count-badge" style="display:none">0</span></a>
         </div>
       </nav>
     </header>
@@ -1109,6 +1141,24 @@ html { scroll-behavior: smooth; }
         currentItem.qty += val;
         if (currentItem.qty < 1) currentItem.qty = 1;
         updateModal();
+      };
+
+      window.toggleMobileMenu = function() {
+        const nav = document.getElementById('mobileNav');
+        const toggle = document.getElementById('menuToggle');
+        const isOpen = nav.classList.toggle('is-open');
+        toggle.setAttribute('aria-expanded', String(isOpen));
+        toggle.setAttribute('aria-label', isOpen ? 'Fechar menu' : 'Abrir menu');
+        toggle.innerText = isOpen ? '×' : '☰';
+      };
+
+      window.closeMobileMenu = function() {
+        const nav = document.getElementById('mobileNav');
+        const toggle = document.getElementById('menuToggle');
+        nav.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.setAttribute('aria-label', 'Abrir menu');
+        toggle.innerText = '☰';
       };
 
       function updateModal() {
