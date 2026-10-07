@@ -546,6 +546,104 @@ html { scroll-behavior: smooth; }
           white-space: nowrap;
         }
       }
+
+      /* ===== ESTILO DELIVERY — aplicado sem alterar caminhos de imagens ===== */
+      :root {
+        --primary-color: #d91b72;
+        --primary: #d91b72;
+        --primary-light: #ee3b8d;
+        --primary-dark: #a51255;
+        --secondary-color: #242424;
+        --dark: #242424;
+        --light: #f7f7f7;
+        --gray: #6b6b6b;
+        --shadow-sm: 0 2px 10px rgba(0,0,0,.08);
+        --shadow-md: 0 6px 22px rgba(0,0,0,.12);
+      }
+      html, body { background: #f7f7f7; color: #242424; }
+      body { font-family: 'Open Sans', Arial, sans-serif; }
+      .announcement-bar { background: #242424; padding: 9px 14px; font-size: 11px; letter-spacing: .2px; }
+      .header-shell { background: rgba(255,255,255,.97); box-shadow: 0 1px 10px rgba(0,0,0,.12); }
+      .main-navbar { background: #fff; }
+      .navbar-container { max-width: 1120px; padding: 10px 22px; }
+      .brand-logo { width: 44px; height: 44px; border-radius: 50%; object-fit: cover; box-shadow: none; border: 1px solid #eee; }
+      .brand-name { color: #242424; font-family: 'Open Sans', Arial, sans-serif; font-size: 15px; font-weight: 800; text-shadow: none; }
+      .brand-name span { color: var(--primary); }
+      .desktop-nav a { color: #242424; text-transform: none; font-size: 13px; font-weight: 700; border-radius: 8px; }
+      .desktop-nav a:hover { color: var(--primary); background: #fff2f7; }
+      .cart-count-badge { background: var(--primary); }
+      .menu-toggle { background: var(--primary); }
+      .mobile-nav { background: #fff; }
+      .mobile-nav a { color: #242424; border-color: #eee; text-transform: none; }
+      .hero { max-width: 1120px; margin: 0 auto; padding: 34px 22px 22px; text-align: left; background: #f7f7f7; }
+      .hero::before { display: none; }
+      .hero-badge { display: inline-flex; background: #fff2f7; color: var(--primary); border: 0; padding: 7px 11px; margin-bottom: 12px; font-size: 11px; letter-spacing: .2px; }
+      .hero h1 { color: #242424; font-family: 'Open Sans', Arial, sans-serif; font-size: clamp(1.7rem, 4vw, 2.45rem); font-weight: 800; margin-bottom: 7px; }
+      .hero h1 .grad { color: var(--primary); background: none; -webkit-text-fill-color: currentColor; }
+      .hero p { color: #6b6b6b; font-size: 14px; margin: 0; }
+      .page-content { background: #fff; border-radius: 20px 20px 0 0; max-width: 1120px; margin: 0 auto; box-shadow: 0 -2px 12px rgba(0,0,0,.04); }
+      .menu-flip-section { max-width: none; padding: 28px 22px 46px; }
+      .menu-flip-section__header { text-align: left; margin-bottom: 18px; }
+      .menu-flip-section__title { color: #242424; font-family: 'Open Sans', Arial, sans-serif; font-size: 21px; font-weight: 800; }
+      .category-shortcuts { justify-content: flex-start; flex-wrap: nowrap; overflow-x: auto; margin: 0 -22px 24px; padding: 0 22px 8px; gap: 8px; scrollbar-width: none; }
+      .category-shortcuts::-webkit-scrollbar { display: none; }
+      .category-shortcuts a { flex: 0 0 auto; color: #555; background: #fff; border: 1px solid #e5e5e5; border-radius: 999px; padding: 9px 15px; font-size: 12px; font-weight: 700; text-transform: none; }
+      .category-shortcuts a:hover, .category-shortcuts a:focus { background: #fff2f7; color: var(--primary); border-color: var(--primary); }
+      .menu-category { color: #242424; background: transparent; border-radius: 0; border-bottom: 1px solid #eee; padding: 0 0 11px; margin: 28px 0 0; font-size: 18px; font-weight: 800; }
+      .menu-flip-section__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 24px; max-width: none; }
+      .menu-flip-section__item { border-bottom: 1px solid #eee; padding: 16px 0; }
+      .menu-flip-card { height: 148px; perspective: 1000px; }
+      .menu-flip-card__inner { transform-style: preserve-3d; }
+      .menu-flip-card__face { border: 0; border-radius: 10px; padding: 0; box-shadow: 0 4px 16px rgba(187, 126, 224, .22); background: #fff; backface-visibility: hidden; -webkit-backface-visibility: hidden; }
+      .menu-flip-card__face--front { align-items: flex-start; }
+      .menu-flip-card__face--back { transform: rotateY(180deg); border: 1px solid #eee; padding: 14px; box-shadow: var(--shadow-sm); }
+      .menu-flip-card:hover .menu-flip-card__face { box-shadow: 0 6px 20px rgba(187, 126, 224, .34); }
+      .menu-flip-card:hover .menu-flip-card__face--back { box-shadow: 0 6px 20px rgba(187, 126, 224, .34); }
+      .menu-flip-card__media { display: flex; flex: 0 0 108px; width: 108px; height: 108px; margin-left: 14px; border-radius: 10px; overflow: hidden; background: #f5f5f5; order: 2; }
+      .menu-flip-card__media img, img.menu-flip-card__media { display: block; width: 108px; height: 108px; max-width: none; border-radius: 10px; object-fit: cover; }
+      .menu-flip-card__front-info { padding: 5px 0 0; }
+      .menu-flip-card__name { color: #242424; font-size: 14px; line-height: 1.3; font-weight: 700; }
+      .menu-flip-card__description { color: #777; font-size: 13px; font-weight: 400; line-height: 1.4; }
+      .menu-flip-card__price { color: #242424; font-size: 14px; font-weight: 800; }
+      .menu-flip-card__face--front .menu-flip-card__name span { display: block; color: var(--primary) !important; margin-top: 7px; font-size: 15px; }
+      .btn-order-now { background: var(--primary); border-radius: 8px; padding: 10px; box-shadow: none; text-transform: none; font-size: 12px; }
+      .order-modal { background: rgba(0,0,0,.55); padding: 12px; }
+      .order-modal__content { background: #fff; border-radius: 16px; color: #242424; }
+      .order-modal__header { background: var(--primary); padding: 18px; }
+      .order-modal__body { padding: 18px; }
+      .order-modal__option.active { border-color: var(--primary); background: #fff2f7; color: var(--primary); }
+      .order-modal__input:focus { border-color: var(--primary); }
+      .order-modal__btn--next, .order-modal__btn--add { background: var(--primary); }
+      .order-modal__btn--send { background: #25d366; }
+      .kb-footer { background: #242424; padding: 30px 20px; }
+      @media (max-width: 700px) {
+        .hero { padding: 24px 16px 18px; }
+        .page-content { border-radius: 16px 16px 0 0; }
+        .menu-flip-section { padding: 24px 16px 38px; }
+        .category-shortcuts { margin-left: -16px; margin-right: -16px; padding-left: 16px; padding-right: 16px; }
+        .menu-flip-section__grid { grid-template-columns: 1fr; }
+        .menu-flip-section__item { padding: 15px 0; }
+        .menu-flip-card { height: 132px; }
+        .menu-flip-card__media, .menu-flip-card__media img, img.menu-flip-card__media { width: 96px; height: 96px; }
+        .menu-flip-card__media { flex-basis: 96px; }
+      }
+      /* Firebase admin panel */
+      .firebase-admin-panel { position: fixed; inset: 0; z-index: 9999; display: flex; align-items: flex-start; justify-content: center; padding: 24px; overflow: auto; background: rgba(28, 18, 42, .72); backdrop-filter: blur(8px); }
+      .firebase-admin-panel[hidden] { display: none; }
+      .firebase-admin-card { width: min(720px, 100%); margin-top: 3vh; padding: 24px; border-radius: 24px; background: #fff; color: #30233d; box-shadow: 0 18px 70px rgba(115, 66, 155, .42); }
+      .firebase-admin-card h2 { margin: 0 0 6px; color: #6d2b98; }
+      .firebase-admin-card p { color: #6d6475; }
+      .firebase-admin-form { display: grid; gap: 10px; max-width: 420px; }
+      .firebase-admin-form input { width: 100%; box-sizing: border-box; padding: 12px 14px; border: 1px solid #d8c9e4; border-radius: 12px; font: inherit; }
+      .firebase-admin-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+      .firebase-admin-actions button, .firebase-admin-save { border: 0; border-radius: 999px; padding: 11px 16px; cursor: pointer; font-weight: 700; background: #7c3aac; color: #fff; }
+      .firebase-admin-actions button.secondary { background: #f1e8f7; color: #6d2b98; }
+      .firebase-admin-groups { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-top: 18px; }
+      .firebase-admin-group { padding: 16px; border: 1px solid #eadcf1; border-radius: 16px; background: #fcf9fe; }
+      .firebase-admin-group h3 { margin: 0 0 10px; color: #6d2b98; }
+      .firebase-admin-check { display: flex; gap: 8px; align-items: flex-start; padding: 6px 0; font-size: .95rem; }
+      .firebase-admin-status { min-height: 22px; margin: 12px 0 0; font-weight: 700; }
+      @media (max-width: 640px) { .firebase-admin-panel { padding: 12px; } .firebase-admin-card { padding: 18px; } .firebase-admin-groups { grid-template-columns: 1fr; } }
     </style>
   </head>
   <body>
@@ -831,7 +929,7 @@ html { scroll-behavior: smooth; }
           </li>
 
 
-                  <!-- SABOR MORANGO  -->
+                  <!-- SABOR MORANGO -->
           <li class="menu-flip-section__item">
             <article class="menu-flip-card" id="card3">
               <div class="menu-flip-card__inner">
@@ -875,7 +973,7 @@ html { scroll-behavior: smooth; }
             </article>
           </li>
 
-       
+        
 
               <!-- Bombom-->
           <li class="menu-flip-section__item">
@@ -1121,18 +1219,18 @@ html { scroll-behavior: smooth; }
         { name: "Abacaxi", price: 1.00, image: "./abacaxi.png" },
         { name: "Banana", price: 0.00, image: "./banana.png" },
         { name: "Manga", price: 1.00, image: "./manga.png" },
-   { name: "Morango", price: 5.00, image: "./morango.png" },  
-      { name: "Pêssego em calda", price: 1.50, image: "./pessego.jpeg" },
+    { name: "Morango", price: 5.00, image: "./morango.png" },    <!-- FECHADO -->  
+        { name: "Pêssego em calda", price: 1.50, image: "./pessego.jpeg" },
         { name: "Leite Condensado", price: 0.00, image: "./moca.png" },
         { name: "Leite em pó", price: 0.00, image: "./leitepó.png" },
         { name: "Paçoca", price: 0.00, image: "./paçoca.png" },
-       { name: "Chocoball", price: 2.00, image: "./chocobaal.png" },  
+        { name: "Chocoball", price: 2.00, image: "./chocobaal.png" },
        { name: "MMS original", price: 7.00, image: "./mm.png" },
         { name: " Cobertura de Nutella", price: 8.00, image: "./nutella.png" },
         { name: " Recheio de Nutella", price: 12.00, image: "./nutella.png" },
          { name: " Pote de Nutella 140g ", price: 19.00, image: "./nutella.png" },
-      { name: " Cobertura de Creme de Avelã", price: 5.00, image: "./cremeavela.png" },
-        { name: " Recheio de Creme de Avelã", price: 9.00, image: "./cremeavela.png" },   
+        { name: " Cobertura de Creme de Avelã", price: 5.00, image: "./cremeavela.png" },
+        { name: " Recheio de Creme de Avelã", price: 9.00, image: "./cremeavela.png" },
         { name: " Cobertura de Creme Leitinho", price: 5.00, image: "./cremeleitinho.png" },
         { name: " Recheio de Creme leitinho", price: 9.00, image: "./cremeleitinho.png" },
         { name: " Cobertura de Kinder Bueno", price: 5.00, image: "./kinder.jpg" },
@@ -1234,6 +1332,7 @@ html { scroll-behavior: smooth; }
         grid.innerHTML = '';
         if(!currentItem.isMonteSeuAcai) return;
         ALL_COMPLEMENTS.forEach((comp, index) => {
+          if (window.complementAvailability && window.complementAvailability[comp.name] === false) return;
           const label = document.createElement('label');
           label.className = 'complement-item';
           label.innerHTML = `<div class="complement-item__image" aria-label="Espaço para imagem de ${comp.name}"><img src="${comp.image}" alt="${comp.name}" onerror="this.style.display='none'"></div><input type="checkbox" value="${index}" onchange="toggleComplement(${index}, this)"><span>${comp.name} (+R$${comp.price.toFixed(2).replace('.', ',')})</span>`;
@@ -1424,6 +1523,136 @@ html { scroll-behavior: smooth; }
       };
 
       window.onclick = function(e) { if (e.target == document.getElementById('orderModal')) closeOrderModal(); };
+    </script>
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+      import { getFirestore, doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+      import { getAuth, onAuthStateChanged, signInWithEmailAndPassword, createUserWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyBY3doudHKco5QuR3yVnxg-3ZX9znZWXaY",
+        authDomain: "cardapiowebsabordoverao.firebaseapp.com",
+        projectId: "cardapiowebsabordoverao",
+        storageBucket: "cardapiowebsabordoverao.firebasestorage.app",
+        messagingSenderId: "1044773896334",
+        appId: "1:1044773896334:web:97cdb263b601682db589df",
+        measurementId: "G-00RQ8KGGNP"
+      };
+      const firebaseApp = initializeApp(firebaseConfig);
+      const db = getFirestore(firebaseApp);
+      const auth = getAuth(firebaseApp);
+      const ADMIN_EMAIL = "kraskinwebsites@gmail.com";
+      const READY_CUPS = [
+        "Copo Sabor Banana", "Copo Sabor Manga", "Copo Sabor Abacaxi", "Copo Sabor Pêssego em calda",
+        "Copo somente Açaí", "Copo Sabor Morango", "Copo Sabor Morango e Banana", "Copo Bombom Branco"
+      ];
+      const menuState = { complements: {}, readyCups: {} };
+      window.complementAvailability = menuState.complements;
+
+      const normalize = value => String(value || '').trim().replace(/\s+/g, ' ').toLowerCase();
+      async function readMenuSettings() {
+        try {
+          const [complementsSnap, cupsSnap] = await Promise.all([
+            getDoc(doc(db, 'menuSettings', 'complements')),
+            getDoc(doc(db, 'menuSettings', 'readyCups'))
+          ]);
+          menuState.complements = complementsSnap.exists() ? (complementsSnap.data().active || {}) : {};
+          menuState.readyCups = cupsSnap.exists() ? (cupsSnap.data().active || {}) : {};
+          window.complementAvailability = menuState.complements;
+          applyReadyCupVisibility();
+        } catch (error) {
+          console.warn('Firebase: configurações remotas indisponíveis; mantendo o cardápio local.', error);
+        }
+      }
+
+      function getReadyCupButtons() {
+        const heading = document.getElementById('categoria-copos');
+        const grid = heading && heading.nextElementSibling;
+        return grid ? [...grid.querySelectorAll('.btn-order-now')] : [];
+      }
+
+      function nameFromOrderButton(button) {
+        const match = (button.getAttribute('onclick') || '').match(/openOrderModal\(['"]([^'"]+)/);
+        return match ? match[1].trim() : '';
+      }
+
+      function applyReadyCupVisibility() {
+        getReadyCupButtons().forEach(button => {
+          const key = normalize(nameFromOrderButton(button));
+          const item = button.closest('.menu-flip-section__item');
+          if (item) item.style.display = menuState.readyCups[key] === false ? 'none' : '';
+        });
+      }
+
+      function adminShell() {
+        const panel = document.createElement('div');
+        panel.className = 'firebase-admin-panel';
+        panel.innerHTML = `<div class="firebase-admin-card">
+          <h2>Painel do cardápio</h2>
+          <p>Ative ou desative complementos e copos prontos sem editar o site.</p>
+          <div id="firebaseAdminLogin" class="firebase-admin-form">
+            <input id="firebaseAdminEmail" type="email" autocomplete="email" placeholder="E-mail do administrador">
+            <input id="firebaseAdminPassword" type="password" autocomplete="current-password" placeholder="Senha">
+            <div class="firebase-admin-actions"><button id="firebaseAdminLoginBtn">Entrar</button><button id="firebaseAdminCreateBtn" class="secondary">Criar acesso</button></div>
+          </div>
+          <div id="firebaseAdminEditor" hidden></div>
+          <div id="firebaseAdminStatus" class="firebase-admin-status" role="status"></div>
+        </div>`;
+        document.body.appendChild(panel);
+        return panel;
+      }
+
+      function renderAdminEditor(panel, user) {
+        const editor = panel.querySelector('#firebaseAdminEditor');
+        const login = panel.querySelector('#firebaseAdminLogin');
+        login.hidden = true;
+        editor.hidden = false;
+        const complementChecks = ALL_COMPLEMENTS.map(comp => `<label class="firebase-admin-check"><input type="checkbox" data-complement="${encodeURIComponent(comp.name)}" ${menuState.complements[comp.name] !== false ? 'checked' : ''}> <span>${comp.name}</span></label>`).join('');
+        const cupChecks = READY_CUPS.map(name => `<label class="firebase-admin-check"><input type="checkbox" data-cup="${encodeURIComponent(name)}" ${menuState.readyCups[normalize(name)] !== false ? 'checked' : ''}> <span>${name}</span></label>`).join('');
+        editor.innerHTML = `<p>Conectado como <strong>${user.email}</strong></p><div class="firebase-admin-groups"><section class="firebase-admin-group"><h3>Complementos</h3>${complementChecks}</section><section class="firebase-admin-group"><h3>Copos prontos</h3>${cupChecks}</section></div><div class="firebase-admin-actions"><button class="firebase-admin-save" id="firebaseAdminSave">Salvar alterações</button><button class="secondary" id="firebaseAdminLogout">Sair</button></div>`;
+        editor.querySelector('#firebaseAdminSave').onclick = async () => {
+          const complements = {};
+          editor.querySelectorAll('[data-complement]').forEach(input => complements[decodeURIComponent(input.dataset.complement)] = input.checked);
+          const readyCups = {};
+          editor.querySelectorAll('[data-cup]').forEach(input => readyCups[decodeURIComponent(input.dataset.cup).toLowerCase()] = input.checked);
+          const status = panel.querySelector('#firebaseAdminStatus');
+          status.textContent = 'Salvando...';
+          try {
+            await Promise.all([
+              setDoc(doc(db, 'menuSettings', 'complements'), { active: complements, updatedAt: new Date().toISOString() }, { merge: true }),
+              setDoc(doc(db, 'menuSettings', 'readyCups'), { active: readyCups, updatedAt: new Date().toISOString() }, { merge: true })
+            ]);
+            menuState.complements = complements;
+            menuState.readyCups = readyCups;
+            window.complementAvailability = complements;
+            applyReadyCupVisibility();
+            status.textContent = 'Alterações salvas com sucesso.';
+          } catch (error) { status.textContent = 'Não foi possível salvar. Verifique as regras do Firestore.'; console.error(error); }
+        };
+        editor.querySelector('#firebaseAdminLogout').onclick = () => signOut(auth);
+      }
+
+      async function initializeAdmin() {
+        const panel = adminShell();
+        const status = panel.querySelector('#firebaseAdminStatus');
+        panel.querySelector('#firebaseAdminLoginBtn').onclick = async () => {
+          try { await signInWithEmailAndPassword(auth, panel.querySelector('#firebaseAdminEmail').value.trim(), panel.querySelector('#firebaseAdminPassword').value); }
+          catch (error) { status.textContent = 'Login não realizado. Confira e-mail e senha.'; }
+        };
+        panel.querySelector('#firebaseAdminCreateBtn').onclick = async () => {
+          try { await createUserWithEmailAndPassword(auth, panel.querySelector('#firebaseAdminEmail').value.trim(), panel.querySelector('#firebaseAdminPassword').value); }
+          catch (error) { status.textContent = 'Não foi possível criar o acesso. Use um e-mail válido e senha com pelo menos 6 caracteres.'; }
+        };
+        onAuthStateChanged(auth, user => {
+          if (!user) { panel.querySelector('#firebaseAdminLogin').hidden = false; panel.querySelector('#firebaseAdminEditor').hidden = true; return; }
+          if (user.email.toLowerCase() !== ADMIN_EMAIL.toLowerCase()) { status.textContent = `Acesso restrito ao administrador ${ADMIN_EMAIL}.`; signOut(auth); return; }
+          renderAdminEditor(panel, user);
+        });
+      }
+
+      readMenuSettings().then(() => {
+        if (new URLSearchParams(location.search).get('admin') === '1') initializeAdmin();
+      });
     </script>
   </body>
 </html>
