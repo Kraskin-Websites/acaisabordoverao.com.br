@@ -1546,20 +1546,27 @@ html { scroll-behavior: smooth; }
         "Copo Sabor Banana", "Copo Sabor Manga", "Copo Sabor Abacaxi", "Copo Sabor Pêssego em calda",
         "Copo somente Açaí", "Copo Sabor Morango", "Copo Sabor Morango e Banana", "Copo Bombom Branco"
       ];
-      const menuState = { complements: {}, readyCups: {} };
+      const DRINKS = [
+        "Coca-Cola Lata", "Coca-Cola ZERO Lata", "Coca-Cola 2 Litros",
+        "Água sem Gás", "Coca-Cola ZERO  2 Litros", "Água com Gás"
+      ];
+      const menuState = { complements: {}, readyCups: {}, drinks: {} };
       window.complementAvailability = menuState.complements;
 
       const normalize = value => String(value || '').trim().replace(/\s+/g, ' ').toLowerCase();
       async function readMenuSettings() {
         try {
-          const [complementsSnap, cupsSnap] = await Promise.all([
+          const [complementsSnap, cupsSnap, drinksSnap] = await Promise.all([
             getDoc(doc(db, 'menuSettings', 'complements')),
-            getDoc(doc(db, 'menuSettings', 'readyCups'))
+            getDoc(doc(db, 'menuSettings', 'readyCups')),
+            getDoc(doc(db, 'menuSettings', 'drinks'))
           ]);
           menuState.complements = complementsSnap.exists() ? (complementsSnap.data().active || {}) : {};
           menuState.readyCups = cupsSnap.exists() ? (cupsSnap.data().active || {}) : {};
+          menuState.drinks = drinksSnap.exists() ? (drinksSnap.data().active || {}) : {};
           window.complementAvailability = menuState.complements;
           applyReadyCupVisibility();
+          applyDrinkVisibility();
         } catch (error) {
           console.warn('Firebase: configurações remotas indisponíveis; mantendo o cardápio local.', error);
         }
@@ -1581,6 +1588,21 @@ html { scroll-behavior: smooth; }
           const key = normalize(nameFromOrderButton(button));
           const item = button.closest('.menu-flip-section__item');
           if (item) item.style.display = menuState.readyCups[key] === false ? 'none' : '';
+        });
+      }
+
+      function getDrinkButtons() {
+        const heading = document.getElementById('categoria-bebidas');
+        const grid = heading && heading.nextElementSibling;
+        return grid ? [...grid.querySelectorAll('.btn-order-now')] : [];
+      }
+
+      function applyDrinkVisibility() {
+        getDrinkButtons().forEach(button => {
+          const match = (button.getAttribute('onclick') || '').match(/openDrinkModal\(['"]([^'"]+)/);
+          const key = normalize(match ? match[1] : '');
+          const item = button.closest('.menu-flip-section__item');
+          if (item) item.style.display = menuState.drinks[key] === false ? 'none' : '';
         });
       }
 
@@ -1609,23 +1631,29 @@ html { scroll-behavior: smooth; }
         editor.hidden = false;
         const complementChecks = ALL_COMPLEMENTS.map(comp => `<label class="firebase-admin-check"><input type="checkbox" data-complement="${encodeURIComponent(comp.name)}" ${menuState.complements[comp.name] !== false ? 'checked' : ''}> <span>${comp.name}</span></label>`).join('');
         const cupChecks = READY_CUPS.map(name => `<label class="firebase-admin-check"><input type="checkbox" data-cup="${encodeURIComponent(name)}" ${menuState.readyCups[normalize(name)] !== false ? 'checked' : ''}> <span>${name}</span></label>`).join('');
-        editor.innerHTML = `<p>Conectado como <strong>${user.email}</strong></p><div class="firebase-admin-groups"><section class="firebase-admin-group"><h3>Complementos</h3>${complementChecks}</section><section class="firebase-admin-group"><h3>Copos prontos</h3>${cupChecks}</section></div><div class="firebase-admin-actions"><button class="firebase-admin-save" id="firebaseAdminSave">Salvar alterações</button><button class="secondary" id="firebaseAdminLogout">Sair</button></div>`;
+        const drinkChecks = DRINKS.map(name => `<label class="firebase-admin-check"><input type="checkbox" data-drink="${encodeURIComponent(name)}" ${menuState.drinks[normalize(name)] !== false ? 'checked' : ''}> <span>${name}</span></label>`).join('');
+        editor.innerHTML = `<p>Conectado como <strong>${user.email}</strong></p><div class="firebase-admin-groups"><section class="firebase-admin-group"><h3>Complementos</h3>${complementChecks}</section><section class="firebase-admin-group"><h3>Copos prontos</h3>${cupChecks}</section><section class="firebase-admin-group"><h3>Bebidas</h3>${drinkChecks}</section></div><div class="firebase-admin-actions"><button class="firebase-admin-save" id="firebaseAdminSave">Salvar alterações</button><button class="secondary" id="firebaseAdminLogout">Sair</button></div>`;
         editor.querySelector('#firebaseAdminSave').onclick = async () => {
           const complements = {};
           editor.querySelectorAll('[data-complement]').forEach(input => complements[decodeURIComponent(input.dataset.complement)] = input.checked);
           const readyCups = {};
           editor.querySelectorAll('[data-cup]').forEach(input => readyCups[decodeURIComponent(input.dataset.cup).toLowerCase()] = input.checked);
+          const drinks = {};
+          editor.querySelectorAll('[data-drink]').forEach(input => drinks[normalize(decodeURIComponent(input.dataset.drink))] = input.checked);
           const status = panel.querySelector('#firebaseAdminStatus');
           status.textContent = 'Salvando...';
           try {
             await Promise.all([
               setDoc(doc(db, 'menuSettings', 'complements'), { active: complements, updatedAt: new Date().toISOString() }, { merge: true }),
-              setDoc(doc(db, 'menuSettings', 'readyCups'), { active: readyCups, updatedAt: new Date().toISOString() }, { merge: true })
+              setDoc(doc(db, 'menuSettings', 'readyCups'), { active: readyCups, updatedAt: new Date().toISOString() }, { merge: true }),
+              setDoc(doc(db, 'menuSettings', 'drinks'), { active: drinks, updatedAt: new Date().toISOString() }, { merge: true })
             ]);
             menuState.complements = complements;
             menuState.readyCups = readyCups;
+            menuState.drinks = drinks;
             window.complementAvailability = complements;
             applyReadyCupVisibility();
+            applyDrinkVisibility();
             status.textContent = 'Alterações salvas com sucesso.';
           } catch (error) { status.textContent = 'Não foi possível salvar. Verifique as regras do Firestore.'; console.error(error); }
         };
