@@ -1257,8 +1257,9 @@ html { scroll-behavior: smooth; }
       };
 
       window.openOrderModal = function(name, p1, p2, p3 = null) {
-        const isPolpaNorte = name.includes("PolpaNorte");
+        const isPolpaNorte = name.includes("Polpa Norte") || name.includes("PolpaNorte");
         const isOrigem = name.includes("Origem");
+        const isMonte = p3 !== null || isPolpaNorte || isOrigem || name.includes("Monte seu Açaí");
 
         let prices = {};
         if (isMonte) {
@@ -1298,6 +1299,7 @@ html { scroll-behavior: smooth; }
 
       window.openMonteSeuAcai = function() { openOrderModal("🍧 Monte seu Açaí", 25.00, 32.50, 36.90); };
       window.openMonteSeuAcaiOrigem = function() { openOrderModal("🍧 Monte seu Açaí Origem", 21.00, 28.50, 34.90); };
+      window.openMonteSeuAcaiPolpaNorte = function() { openOrderModal("🍧 Monte seu Açaí Polpa Norte", 25.00, 32.50, 36.90); };
 
       window.openDrinkModal = function(name, price) {
         currentItem = {
